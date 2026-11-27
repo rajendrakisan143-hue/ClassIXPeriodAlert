@@ -1,0 +1,17 @@
+BUILD THE APK WITHOUT INSTALLING ANDROID STUDIO ON YOUR PC
+
+This source bundle includes a GitHub Actions workflow at:
+.github/workflows/android-build.yml
+
+Steps:
+1. Sign in to GitHub and create a new empty repository, e.g. ClassIXPeriodAlert.
+2. Extract this ZIP on your computer.
+3. Upload the CONTENTS of the ClassIXPeriodAlert folder (including the hidden .github folder) to the repository. Do not upload only the outer folder as a nested project.
+4. Open the repository's Actions tab.
+5. Select "Build Class IX Period Alert APK" and click "Run workflow" (if it did not start automatically after pushing).
+6. Wait for the workflow to finish successfully.
+7. Open the completed workflow run and download the artifact named "ClassIXPeriodAlert-debug-apk".
+8. Extract the artifact; it contains app-debug.apk. Transfer it to the Android smartboard and install it.
+9. Open the app, tap ENABLE PERIOD ALERTS, allow notifications and exact-alarm access, and test an upcoming period.
+
+The APK is a debug-signed installable test APK. It is suitable for sideloading on the smartboard; it is not a Play Store release build.
